@@ -44,7 +44,7 @@ const sliderBg = new Swiper('.slider_bg', {
 
 document.querySelectorAll('.slider__item').forEach(item => {
     item.addEventListener('click', event => {
-        
+
         item.classList.toggle('opened');
         if (item.className.includes("opened")) {
             item.firstElementChild.style.display='block';  
@@ -78,27 +78,27 @@ let ports = ['7000', '8000', '9000', '5000', '6000', '4000'];
 let target = String(window.location)   
 
 document.getElementById('1').addEventListener('click', event =>{
-    window.location.href = target.substring(0, target.length - 6) + ":" + String(ports[0]);
+    window.location.href = target.substring(0, target.length - 1) + ":" + String(ports[0]);
 })
 
 document.getElementById('2').addEventListener('click', event =>{
-    window.location.href = target.substring(0, target.length - 6) + ":" + String(ports[1]);
+    window.location.href = target.substring(0, target.length - 1) + ":" + String(ports[1]);
 })
 
 document.getElementById('3').addEventListener('click', event =>{
-    window.location.href = target.substring(0, target.length - 6) + ":" + String(ports[2]);
+    window.location.href = target.substring(0, target.length - 1) + ":" + String(ports[2]);
 })
 
 document.getElementById('4').addEventListener('click', event =>{
-    window.location.href = target.substring(0, target.length - 6) + ":" + String(ports[3]);
+    window.location.href = target.substring(0, target.length - 1) + ":" + String(ports[3]);
 })
 
 document.getElementById('5').addEventListener('click', event =>{
-    window.location.href = target.substring(0, target.length - 6) + ":" + String(ports[4]);
+    window.location.href = target.substring(0, target.length - 1) + ":" + String(ports[4]);
 })
 
 document.getElementById('6').addEventListener('click', event =>{
-    window.location.href = target.substring(0, target.length - 6) + ":" + String(ports[5]);
+    window.location.href = target.substring(0, target.length - 1) + ":" + String(ports[5]);
 })
 
 let desc = document.querySelector('.description')

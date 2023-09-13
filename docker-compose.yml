@@ -5,6 +5,6 @@ services:
     container_name: start_page
     restart: always
     ports:
-      - 8080:80
+      - 80:80
     volumes:
       - ./:/usr/share/nginx/html
