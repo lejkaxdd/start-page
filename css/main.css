@@ -39,18 +39,22 @@ body, html {
 
 .slider_main {
     position: relative;
-    overflow: visible;
     max-height: 100%;
+    z-index: 10;
+}
+
+.slider_main.opened {
+    position: relative;
+    max-height: 100%;
+    z-index: 100;
 }
 
 .slider_block{
     position: relative;
-    overflow: visible;
     top: -30vh;
-    left: -60vh;
+    left: 10vh;
     max-height: 100%;
-    /* opacity: 0.5; */
-    /* filter: blur(120px) saturate(10) ;    */
+    z-index:10;
 }
 
 
@@ -116,22 +120,19 @@ body, html {
     background-size: cover;
     width: max-content;
     max-height: 80vh;
-    /* transform: scale(1); */
     box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
 }
 
 .slider__item2.opened{
     top: -40vh;
-    /* z-index: 10; */
     width: max-content;
     max-height: 80vh;
-    /* transform: scale(1); */
     box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
 }
 
 
 .slider__item.opened button{
-    z-index: 3;
+    z-index: 4;
     background-color: #33D243;
     color: #050608;
 }
@@ -202,7 +203,7 @@ body, html {
 
 .service-p {
     font-family: Avalon;
-    z-index: 3;
+    z-index: 10;
     font-size: 15px;
     color: #050608;
     background-color: #33D243;

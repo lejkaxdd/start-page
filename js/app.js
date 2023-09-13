@@ -18,7 +18,6 @@ const sliderMain = new Swiper('.slider_main', {
 
 const sliderblock = new Swiper('.slider_block', {
     freeMode: true,
-    centeredSlides: true,
     breakpoints: {
         0: {
             slidesPerView: 2.5,
@@ -44,7 +43,7 @@ const sliderBg = new Swiper('.slider_bg', {
 
 document.querySelectorAll('.slider__item').forEach(item => {
     item.addEventListener('click', event => {
-
+        document.querySelector('.slider_main').classList.toggle('opened')
         item.classList.toggle('opened');
         if (item.className.includes("opened")) {
             item.firstElementChild.style.display='block';  
